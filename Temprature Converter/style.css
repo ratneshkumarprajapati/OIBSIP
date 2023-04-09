@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300&family=Mulish:wght@200&family=Noto+Sans:wght@300&family=Poppins:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Mulish', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.wrapper {
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(./bg1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#navbar {
+
+    /* background-color: aqua; */
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+    font-weight: 900;
+    font-size: 1.3rem;
+    padding-left: 2rem;
+
+
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: rgb(217, 156, 255);
+}
+ul li a:hover{
+    color:rgb(147, 25, 223) ;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* background:linear-gradient(170deg, rgba(0, 255, 234, 0.773) 0%, rgba(115, 155, 255, 0.83) 100%); */
+    /* background-color: #330033;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E"); */
+
+}
+
+
+.container-box {
+    position: relative;
+    top: -2.5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    height: 60%;
+    /* background:linear-gradient(170deg, rgba(0, 255, 234, 0.773) 0%, rgba(115, 155, 255, 0.83) 100%); */
+    background: linear-gradient(323deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 96%);
+    border-radius: .1rem;
+    box-shadow: 2px 3px 5px rgba(157, 157, 157, 0.639);
+    border: none;
+}
+
+h1 {
+    color: rgb(0, 0, 125);
+}
+
+.form {
+    display: flex;
+    margin-top: 2.55rem;
+    justify-content: space-evenly;
+
+
+}
+
+.form p {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+
+
+
+
+}
+
+.form p i {
+    font-size: 2rem;
+    color: blue;
+}
+
+.form input {
+    width: 15rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    padding-left: .8rem;
+}
+
+.form label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: rgb(3, 0, 145);
+}
+
+.btn {
+    margin-top: 6rem;
+
+}
+
+.btn button {
+    width: 10rem;
+    height: 2.8rem;
+    border: none;
+    font-size: 2rem;
+    font-weight: 900;
+    box-shadow: 2px 2px 5px 1px blue;
+    color: blue;
+    background-color: rgb(216, 234, 246);
+}
+
+@media (max-width:1000px){
+    .wrapper{
+        overflow:auto;
+    }
+    
+    #navbar {
+
+        /* background-color: aqua; */
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form {
+
+        display: flex;
+        margin-top: 2.55rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+    
+    }
+    .form label{
+        display: inline-block;
+    }
+    .container-box {
+        position: relative;
+        top: -2.5rem;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        height:auto;
+        padding: 2rem;
+        /* background:linear-gradient(170deg, rgba(0, 255, 234, 0.773) 0%, rgba(115, 155, 255, 0.83) 100%); */
+        background: linear-gradient(323deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 96%);
+        border-radius: .1rem;
+        box-shadow: 2px 3px 5px rgba(157, 157, 157, 0.639);
+        border: none;
+    }
+    .form p {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: rotate(90deg);
+    
+    
+    
+    
+    
+    
+    }
+
+}
+@media (max-width:400px){
+    .container-box {
+        position: relative;
+        top: 10rem;
+     
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        flex-direction: column;
+        width: 90%;
+        height:auto;
+        padding: 2rem;
+        /* background:linear-gradient(170deg, rgba(0, 255, 234, 0.773) 0%, rgba(115, 155, 255, 0.83) 100%); */
+        background: linear-gradient(323deg, rgba(0, 0, 255, 1) 0%, rgba(238, 130, 238, 1) 96%);
+        border-radius: .1rem;
+        box-shadow: 2px 3px 5px rgba(157, 157, 157, 0.639);
+        border: none;
+        margin-bottom: 2rem;
+    }
+    .form input {
+        width: 15rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        padding-left: .8rem;
+    }
+    .form {
+
+        display: flex;
+        margin-top: 2.55rem;
+        justify-content: space-evenly;
+        flex-direction: column;
+    
+    
+    }
+
+}

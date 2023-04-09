@@ -1,0 +1,303 @@
+/* css reset */
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* css variables{} */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    
+    position: sticky;
+    top: 0;
+}
+/* Navigation logo and image */
+
+#logo {
+    margin: 18px 15px;
+    margin-left: 5px;
+
+}
+
+#logo img {
+    height: 50px;
+    margin: -12px 4px;
+    border-radius: 100px;
+}
+/* Navigation items */
+#navbar ul{
+    display: flex;
+}
+.item{
+    border: 2px salmon;
+}
+
+#navbar::before{
+   content: "";
+   background-color: rgb(0, 0, 0);
+   position:absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: .5;
+
+}
+#navbar ul li{
+    /* color: antiquewhite; */
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    /* color: rgb(255, 248, 248); */
+     color: antiquewhite; 
+    display: block;
+    padding: 14px 18px;
+    /* background-color: antiquewhite; */
+    border-radius: 20px;
+    text-decoration: none;
+    /* border: 2px crimson; */
+    line-height: 2px;
+    margin: 20px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+#navbar ul li a:hover{
+    color: rgb(194, 123, 31);
+   background-color: antiquewhite;
+   
+}
+/* Home section */
+#home{
+    display: flex;
+    height: 400px;
+    flex-direction: column;
+    padding:30px 20px ;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+
+
+
+
+}
+#home p{
+    padding-top: 20px;
+    margin: 20px 40px;
+    font-size: 20px;
+}
+#home::before{
+    content: "";
+   background: url('../images/bg1.jpg') no-repeat center center/cover;
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: .89;
+   top: 0;
+   left: 0;
+  
+
+  
+    
+
+
+}
+h1.h-primary{
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 3.8rem;
+    padding: 10px;
+    margin: auto;
+    height: 44px;
+    width: 314px;
+    position: relative;
+
+    
+
+}
+/* #home p{
+    font-size: 1.2rem;
+} */
+.btn{
+    font-family: 'Baloo Bhaina 2', cursive;
+    border: 2px solid white;
+    /* padding-left: 7px;
+    padding-right: 7px; */
+    border-radius: 10px;
+    background-color: brown;
+    color: aliceblue;
+    font-size: 1rem;
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 7rem;
+}
+/* service section */
+
+
+#services-container{
+    position: relative;
+    top: 12rem;
+    z-index: -5;
+}
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box {
+    
+    border: 2px solid brown;
+    /* height: 250px;
+    width: 250; */
+    margin: 5px;
+    border-radius: 10px;
+}
+#services .box img{
+    display: block;
+    margin: auto;
+    height: 250px;
+    width: 250px;
+    border-radius: 10px;
+ 
+    
+}
+/* #services{
+    
+}
+#services{
+    
+}
+#services{ */
+    
+
+/* utility class */
+
+h2.h-secondary.center {
+    font-family: 'Baloo Bhaina 2', cursive;
+    font-size: 1.8rem;
+    padding: 12px;
+    margin: auto;
+    height: 44px;
+    width: 134px;
+
+    
+
+    
+
+}
+#home h1{
+    display: flex;
+    color: rgb(243, 232, 232);
+    text-align: center;
+    justify-content: center;
+   
+
+
+}
+#home p{
+    font-family: 'Baloo Bhaina 2', cursive;
+    color: white;
+    text-align: center;
+
+
+}
+
+.center{
+    text-align: center;
+    padding: 20px;
+}
+/* client sectiom */
+/* #client-section{
+
+
+} */
+
+#client-section{
+    position: relative;
+    top: 12rem;
+    z-index: -5;
+}
+#client{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.client-items img{
+    padding: 10px;
+    height: 100px;
+    width: 100px;
+}
+.client-items{
+    margin: 10px;
+    padding: 20px;
+}
+#client-section::before{
+    content: "";
+    background: url('../images/bg.jpg') no-repeat center center/cover;
+    position: absolute;
+   height: 100%;
+   width: 100%;
+   z-index: -1;
+   opacity: 0.3;
+   /* top: 0;
+   left: 0; */
+}
+/* Contact Section */
+#contact{
+    position: relative;
+    top: 15rem;
+    
+
+}
+
+#contact::before{
+   content: "";
+   width: 100%;
+   height: 150%;
+   position: absolute;
+   background: url('../images/contact.jpg')no-repeat center center/cover;
+   z-index: -1;
+   opacity: 0.2;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    
+
+}
+#contact-box form{
+    width: 30%;
+}
+#contact-box form input{
+    border-radius: 3px;
+    padding: 10px;
+    font-size: 15px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: .5rem;
+
+}
+/* footer */
+footer{
+    position: relative;
+    top: 15rem;
+}
